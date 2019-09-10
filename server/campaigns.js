@@ -31,4 +31,11 @@ router.post('/', upload.single('campaignContent'), (req, res, next) => {
 
 });
 
+router.get('/:id', (req, res, next) => {
+  connection.execute('SELECT * FROM `requests` WHERE requestID = ' + req.requestID, (err, rows, fields) => {
+    if (err) throw err;
+    res.json(rows);
+  });
+});
+
 module.exports = router;
