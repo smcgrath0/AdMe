@@ -30,9 +30,11 @@ export default class ViewSubmissionDetails extends React.Component {
   }
 
   getSubmissionData() {
-    fetch(`http://localhost:3000/api/submissions/${this.props.match.params.submissionID}`)
+    console.log(this.props.match.params.submissionID);
+    fetch(`/api/submissions/${this.props.match.params.submissionID}`)
       .then(res => res.json())
       .then(res => {
+        console.log('RES:', res);
         this.setState({
           submissionID: res[0].submissionID,
           submissionContent: res[0].submissionContent,
@@ -50,7 +52,7 @@ export default class ViewSubmissionDetails extends React.Component {
 
   updateLikes() {
     if (!this.state.isLikedByThisUser) {
-      fetch('http://localhost:3000/api/submissions/likes/' + this.props.match.params.submissionID,
+      fetch('/api/submissions/likes/' + this.props.match.params.submissionID,
         {
           method: 'POST'
         })
@@ -62,7 +64,7 @@ export default class ViewSubmissionDetails extends React.Component {
           });
         });
     } else if (this.state.isLikedByThisUser) {
-      fetch('http://localhost:3000/api/submissions/dislikes/' + this.props.match.params.submissionID,
+      fetch('/api/submissions/dislikes/' + this.props.match.params.submissionID,
         {
           method: 'POST'
         })
@@ -97,8 +99,10 @@ export default class ViewSubmissionDetails extends React.Component {
       method: 'delete'
 
     };
-    fetch(`/api/submissions/${this.state.submissionID}`, init);
-
+    fetch(`/api/submissions/${this.state.submissionID}`, init)
+      .then(res => res.json()).then(res => {
+        this.props.history.push(`/creator-portfolio/${this.context.currentUser.id}`);
+      });
   }
 
   createConfirmation() {
