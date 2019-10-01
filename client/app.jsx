@@ -53,7 +53,7 @@ export default class App extends React.Component {
   setUser() {
 
     var currentUser = JSON.parse(localStorage.getItem('currentUser'));
-    if (currentUser.type !== null) {
+    if (currentUser !== null) {
       this.setState({ currentUser });
     }
   }
