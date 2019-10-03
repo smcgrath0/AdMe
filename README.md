@@ -4,5 +4,5 @@
  - Technologies: React (routers/context), Node, MySQL, Express
          
 # LIVE
-[adme.com](http://adme.sairafe.com)
-![GIF of AdMe](/server/public/img/portfoliovidAdMe2.gif)
+ - [adme.com](http://adme.sairafe.com)
+ - ![GIF of AdMe](/server/public/img/portfoliovidAdMe2.gif)
