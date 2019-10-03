@@ -1,4 +1,4 @@
 # AdME
 
 # LIVE
-[!adme.com](http://adme.sairafe.com)
+[adme.com](!http://adme.sairafe.com)
