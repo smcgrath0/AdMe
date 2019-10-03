@@ -54,7 +54,7 @@ export default class NavBar extends React.Component {
     return (
       <div>
         {this.checkUserExists() &&
-          <Navbar className='d-none d-md-block shadow-lg' style={{ 'backgroundColor': '#841D9E', 'width': '100vw', 'textAlign': 'center', 'padding': '0', position: 'fixed', zIndex: '1', top: '0px' }} light expand="md">
+          <Navbar className='d-none d-md-block shadow-lg' style={{ 'backgroundColor': '#841D9E', 'width': '100vw', 'textAlign': 'center', 'padding': '0', position: 'fixed', zIndex: '1', top: '0px' }} light expand="sm">
             <Link to='/landing-page' style={{
               'height': '3rem',
               'color': '#EEEEEE',
