@@ -1,0 +1,186 @@
+body{
+  color: #11071be1;
+}
+
+.creatorInfoContainer, .switchUserContainer{
+  color: #11071be1;
+  font-family: 'Patua One', cursive;
+}
+
+.creatorTab{
+ border-top: 2px solid #dee2e6;
+ margin-top: 0;
+}
+
+a.active.nav-link {
+  background-color: #dee2e6;
+  border-top: 2px solid #dee2e6;
+  border-left: 2px solid #dee2e6;
+  border-right: 2px solid #dee2e6;
+}
+
+.nav-tabs .nav-link.active{
+  background-color: #dee2e6;
+  margin-bottom: 0;
+  border-color:  #dee2e6;
+}
+
+.creatorSubmissionForm{
+  background-image: linear-gradient(to top right, #CAC4CE, rgb(234, 224, 240));
+  color: #242038;
+}
+
+.creatorSubmitButton{
+  background-color: #9067C6;
+  border: none;
+}
+
+.createCampaignButton:hover{
+  background-color: #9067C6;
+  border: 1px solid black;
+}
+
+@media (max-width: 500px) {
+  .companyHeaderContainer{
+    display:block;
+    width: 100%;
+  }
+  .companyHeader {
+    display: flex;
+  }
+  .tab-text{
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .companyHeader {
+    display: block;
+    width: 100%;
+    height: 170px;
+    text-align:center
+  }
+}
+
+::-webkit-scrollbar{
+        height: .75rem;
+        width: 2rem;
+
+    }
+    ::-webkit-scrollbar-thumb:horizontal{
+        background: rgba(139, 8, 179, 0.63);
+        border-radius: 10px;
+    }
+
+::-webkit-scrollbar:vertical{
+        display: none;
+}
+
+.glassCard{
+  -moz-box-shadow:    inset 0 0 10px rgba(139, 8, 179, 0.63);
+   -webkit-box-shadow: inset 0 0 10px rgba(139, 8, 179, 0.63);
+   box-shadow: inset 0 0 15px rgb(191, 62, 230), 0 5px 6px 2px  rgba(79, 2, 102, 0.63);
+   font-family: 'Patua One', cursive;
+   background-color:  rgb(238, 232, 240);
+
+}
+
+.glassCard:hover {
+   box-shadow: inset 0 0 15px rgb(191, 62, 230), 0 9px 8px 4px  rgba(79, 2, 102, 0.63);
+}
+
+.profilePicShadow {
+   box-shadow: inset 0 0 15px rgb(191, 62, 230), 0 6px 6px 2px  rgba(79, 2, 102, 0.63);
+}
+.winningCard{
+   box-shadow: inset 0 0 15px rgb(220, 209, 87), 0 5px 6px 2px rgb(220, 208, 75);
+   font-family: 'Patua One', cursive;
+   background-color:  rgb(244, 244, 231);
+}
+
+.winningCard:hover {
+   box-shadow: inset 0 0 15px rgb(220, 209, 87), 0 9px 8px 4px rgb(220, 208, 75);
+}
+
+.playButton{
+  width: 0;
+  height: 0;
+  border-top: 2.5rem solid transparent;
+  border-bottom: 2.5rem solid transparent;
+  cursor: pointer;
+  border-left: 2.5rem solid rgba(139, 8, 179, 0.63);
+  display: inline-block;
+  margin-top: 15%;
+}
+
+.campaignCard, .profilePicSmall {
+  cursor: pointer;
+}
+
+.switchUserDropDown{
+  color: #242038;
+}
+
+@media(max-width: 500px){
+  .submission-details-author-name{
+    font-size: 1rem;
+  }
+  .submission-details-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media(min-width: 500px){
+  .submission-details-author-name{
+    font-size: 1.7rem;
+  }
+  .submission-details-title {
+    font-size: 2.2rem;
+  }
+}
+
+.submissionTitle:hover{
+  color: white;
+  cursor: pointer;
+}
+#campaignBackgroundDiv{
+  background-color:white;
+}
+#campaignBackgroundDiv:hover {
+  background-color: lightgray;
+}
+@media(max-width: 500px){
+  .campaignContent{
+    width: 100%;
+    height: 125px;
+  }
+  .campaignTitleText{
+    font-size: 1rem;
+  }
+}
+@media(min-width: 500px){
+  .campaignContent{
+    width: 100%;
+    height: 15%;
+  }
+  .campaignTitleText{
+    font-size: 2rem;
+  }
+}
+#campaignBackgroundDiv:hover > .campaignContent{
+  width: 350px;
+  height: 350px
+}
+
+
+.campaignDetailsLink:hover {
+  color: black;
+}
+
+.pickWinner{
+  transition: all 2s ease;
+  cursor: pointer;
+}
+.pickWinner:hover{
+  transform: scale(1.5)
+}
