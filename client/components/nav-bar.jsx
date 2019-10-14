@@ -54,7 +54,7 @@ export default class NavBar extends React.Component {
     return (
       <div>
         {this.checkUserExists() &&
-          <Navbar className='d-none d-md-block shadow-lg' style={{ 'backgroundColor': '#841D9E', 'width': '100vw', 'textAlign': 'center', 'padding': '0', position: 'fixed', zIndex: '1', top: '0px' }} light expand="sm">
+          <Navbar className='d-none d-sm-block shadow-lg' style={{ 'backgroundColor': '#841D9E', 'width': '100vw', 'textAlign': 'center', 'padding': '0', position: 'fixed', zIndex: '1', top: '0px' }} light expand="sm">
             <Link to='/landing-page' style={{
               'height': '3rem',
               'color': '#EEEEEE',
@@ -157,8 +157,8 @@ export default class NavBar extends React.Component {
         }
         {this.checkUserExists() &&
           <>
-          <div style={{ height: '4rem', width: '100%' }}></div>
-          <Navbar className='d-block d-md-none' style={{ 'backgroundColor': '#841D9E', 'width': '100vw', 'textAlign': 'center', 'padding': '0', position: 'fixed', zIndex: '1', top: '0px' }} light>
+          <div style={{ height: '100px', width: '100%' }}></div>
+          <Navbar className='d-block d-sm-none' style={{ 'backgroundColor': '#841D9E', 'width': '100vw', 'textAlign': 'center', 'padding': '0', position: 'fixed', zIndex: '1', top: '0px' }} light>
             <div style={{
               'height': '3rem',
               'color': '#EEEEEE',
