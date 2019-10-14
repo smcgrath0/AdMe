@@ -129,8 +129,8 @@ export default class CreatorPortfolio extends React.Component {
 
                               </h5>
                               <Link to={`/submission-details/${currentEntry.submissionID}`}>
-                                <img className="pb-4 mx-auto" src={'/' + currentEntry.submissionThumbnail}
-                                  style={{ width: '90%' }}>
+                                <img className="pb-4" src={'/' + currentEntry.submissionThumbnail}
+                                  style={{ width: '90%', marginLeft: '5%' }}>
                                 </img>
                               </Link>
                             </React.Fragment>
